@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comforter&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comforter&display=swap" rel="stylesheet">
+
+    <title>Contacto</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <!--Cabecera con logo y buscador-->
+    <section class="front-page">
+        <img class="hero" src="/img/andrew-neel-jtsW--Z6bFw-unsplash.jpeg" alt="">
+        <nav>
+            <div class="logo">
+                <img src="/img/" alt="">
+                <!--<h1>Imagen Saludable</h1>.-->
+            </div>
+            <!--Menu desplegable-->
+            <div class="links">
+                <a href="#alim">Alimentacion</a>
+                <a href="#dep">Deporte</a>
+                <a href="#rec">Reciclar</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <svg width="44" height="18" viewBox="0 0 44 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line class="line" y1="1" x2="44" y2="1" stroke="white" stroke-width="2" />
+                <line class="line" y1="17" x2="11" y2="17" stroke="white" stroke-width="2" />
+            </svg>
+        </nav>
+        <div class="selling-point">
+            <h2>Que tu mente respire</h2>
+            <h3></h3>
+            <div class="ctas">
+                <button class="cta-sec">Explorador</button>
+                <button class="cta-main">Mas informacion</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <form action="" name="forms">
+            <div class="tag"><label for="nombre">Nombre</label></div>
+            <br>
+            <input type="text" id="nombre" placeholder="Ingrese su nombre">
+            <br>
+            <div class="tag"><label for="apellido">Apellido</label>
+            </div>
+            <br>
+            <input type="text" id="apellido" required placeholder="Ingrese su apellido">
+            <br>
+            <div class="tag"><label for="email">Correo electrónico</label>
+            </div>
+            <br>
+            <input type="email" id="email" placeholder="Ingrese su correo electrónico">
+            <br>
+            <div class="tag"><label for="telefono">Número de teléfono</label>
+            </div>
+            <br>
+            <input type="number" id="telefono" placeholder="Ingrese su número de teléfono">
+            <br>
+            <div class="tag">
+                <label for="interes">Sobre cual de estos temas quiere recibir informacion:</label>
+                <select id="interes" name="interes">
+                    <option value="int1">Alimentacion Saludable</option>
+                    <option value="int2">Actividad fisica</option>
+                    <option value="int3">Ciudado del ambiente</option>
+                </select>
+            </div>
+            <br><br>
+            <div class="tag"><label for="mensaje">Ingrese aquí un mensaje</label>
+                <br>
+                <textarea name="mensaje" id="mensaje" placeholder="Mensaje"></textarea>
+                <br>
+            </div>
+            <br><br><br><br>
+            <div class="tag">
+                <input type="checkbox" name="terminos" id="terminos">
+                <label for="terminos">Acepto los Términos y Condiciones</label>
+            </div>
+            <br><br>
+            <input type="submit" value="Enviar">
+
+        </form>
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+      <!--Libreria de animacion para JS-->>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js" integrity="sha512-tHvUcUQYi35zApvAa5TNR3fNhBQkVtkmWKfacnpxmix4/VTGz1lGjIVyLMp7gLgAvg+aKJjnVKokXJNS5GZ+/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <!--Nuestro JS-->
+      <script src="/script.js"></script>
+</body>
+
+</html>
