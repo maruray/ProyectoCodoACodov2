@@ -35,3 +35,68 @@ videos.forEach((video) => {
         onLeaveBack: () => video.pause(),
     });
 });
+
+
+var formulario = document.getElementsByName('forms')[0];  //[0] Primer elemento, el formulario en si mismo.
+// -----borrar   elementos = formulario.elements,                            // Elementos del form, no lo usamos en este script.
+// -----   boton = document.getElementById('b1')                       // El botón
+
+
+// --------------------------------------------------------
+// Validar Nombre
+// --------------------------------------------------------
+var validarNombre = function (e) {
+    if (formulario.nombre.value == 0) {      
+        alert("Complete el campo nombre");
+        e.preventDefault();
+    }
+};
+
+// --------------------------------------------------------
+// Validamos Apellido
+// --------------------------------------------------------
+var validarApellido = function (e) {
+    if (formulario.apellido.value == 0) {      
+        alert("Completa el campo apellido");
+        e.preventDefault();
+    }
+};
+
+// --------------------------------------------------------
+// Validar Interes
+// --------------------------------------------------------
+var validarRadio = function (e) {
+    if (formulario.so[0].checked == true ||
+        formulario.so[1].checked == true ||
+        formulario.so[2].checked == true) {
+    } else { 
+        alert("Selecciona un interés");
+        e.preventDefault();
+    }
+};
+
+// --------------------------------------------------------
+// Validamos Terminos y Condiciones
+// --------------------------------------------------------
+var validarCheckbox = function (e) {
+    if (formulario.terminos.checked == false) {
+        alert("Acepta los términos y condiciones");
+        e.preventDefault();
+    }
+};
+
+// --------------------------------------------------------
+// Se ejecuta al presionar submit e invoca a las tres validaciones
+// --------------------------------------------------------
+var validar = function (e) {  // "e" es el evento recibido del form (https://developer.mozilla.org/es/docs/Web/API/Event/preventDefault)
+    validarNombre(e);
+    validarApellido(e);
+    validarRadio(e);
+    validarCheckbox(e);
+};
+
+// --------------------------------------------------------
+// Espera que se presione "enviar" y llama a "validar"
+// submit es un evento DEL FORM, no del botón!
+formulario.addEventListener("submit", validar);
+
