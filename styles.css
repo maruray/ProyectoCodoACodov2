@@ -278,7 +278,7 @@ textarea {
     font-family: 'Courgette', cursive;
 }
 
-input[type=text]:focus, select {
+input[type=text]:focus, select:focus {
   border: 3px solid #555;
 /*font-family: 'Montserrat', sans-serif;*/
     font-family: 'Courgette', cursive;
