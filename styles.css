@@ -337,5 +337,29 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+.footerLinks {
+  text-decoration: none;
+  background-color: #353521;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  padding: 20px;    
+}
 
+.footerLinks ul {
+  display: inline-block;
+  justify-content: center;
+
+}
+
+.footerLinks ul li {
+  font-size: 18px;
+  font-family: 'Courgette', cursive;
+  display: inline-block;
+  border-left: 1px solid antiquewhite;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
