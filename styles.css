@@ -249,7 +249,8 @@ input[type=text],
 input[type=number],
 input[type=email],
 textarea,
-select {
+select,
+select#interes {
   width: 90%;
   padding: 12px 20px;
   margin-left: 2%;
@@ -304,6 +305,7 @@ label,select,option{
 .grid-container {
   display: grid;
 grid-template-columns: 2fr 3fr;
+gap: 5px;
 }
 
 .grid-item1 {
@@ -312,12 +314,16 @@ grid-template-columns: 2fr 3fr;
   /*font-family: 'Montserrat', sans-serif;*/
   font-family: 'Courgette', cursive;
   margin-left: 10px;
+  padding: 12px 20px;
+  
+  
 }
 .grid-item2{
   grid-column-start: 2;
   grid-column-end: 3;
   /*font-family: 'Montserrat', sans-serif;*/
   font-family: 'Courgette', cursive;
+  padding: 12px 0px;
 }
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -329,5 +335,9 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+label{
+
 }
 
