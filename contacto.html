@@ -6,24 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--Fuentes
+    <!--Fuentes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comforter&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comforter&display=swap" rel="stylesheet">
-    -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
 
     <title>Contacto</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
-       <!--Cabecera con logo y buscador-->
+    <!--Cabecera con logo y buscador-->
     <section class="front-page">
         <img class="hero" src="/img/andrew-neel-jtsW--Z6bFw-unsplash.jpeg" alt="">
         <nav>
@@ -45,66 +41,76 @@
         </nav>
         <div class="selling-point">
             <h2>Que tu mente respire</h2>
-            
+
 
         </div>
     </section>
-<section id="contacto">
-    <h3>Estemos en contacto</h3>
-    <div class="grid-container">
-        <form action="" name="forms">
-            <div class="grid-item"><label for="nombre">Nombre</label>
-            <br>
-            <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
-            <br></div>
-            <div class="grid-item"><label for="apellido">Apellido</label>
-            
-            <br>
-            <input type="text" id="apellido" placeholder="Ingrese su apellido" required>
-            <br></div>
-            <div class="grid-item"><label for="email">Correo electrónico</label>
-            
-            <br>
-            <input type="email" id="email" placeholder="Ingrese su correo electrónico">
-            <br></div>
-            <div class="grid-item"><label for="telefono">Número de teléfono</label>
-            
-            <br>
-            <input type="number" id="telefono" placeholder="Ingrese su número de teléfono">
-            <br></div>
-            <div class="grid-item">
-                <label for="interes">Sobre cual de estos temas quiere recibir informacion:</label>
-                <select id="interes" name="interes">
-                    <option value="int1">Alimentacion Saludable</option>
-                    <option value="int2">Actividad fisica</option>
-                    <option value="int3">Ciudado del ambiente</option>
-                </select>
-            
-            <br><br></div>
-            <div class="grid-item"><label for="mensaje">Ingrese aquí un mensaje</label>
-                <br>
-                <textarea name="mensaje" id="mensaje" placeholder="Mensaje"></textarea>
-                <br>
-            
-            <br><br></div>
-            <div class="grid-item">
-                <input type="checkbox" name="terminos" id="terminos">
-                <label for="terminos">Acepto los Términos y Condiciones</label>
-            
-            <br><br></div>
-            <input type="submit" value="Enviar">
+    <section id="contacto">
+        <h3>Estemos en contacto</h3>
+        <div id="campos">
+            <form action="" name="forms" class="grid-container">
+                <div class="grid-item1"><label for="nombre">Nombre</label></div>
+                <div class="grid-item2"><input type="text" id="nombre" placeholder="Ingrese su nombre" required>
 
-        </form>
-    </div>
-</section>
+                </div>
+                <div class="grid-item1"><label for="apellido">Apellido</label>
+                    <br>
+                </DIV>
+                <DIV class="grid-item2"> <input type="text" id="apellido" placeholder="Ingrese su apellido" required>
+                    <br>
+                </div>
+                <div class="grid-item1"><label for="email">Correo electrónico</label>
+                </div>
+                  <div class="grid-item2">  <input type="email" id="email" placeholder="Ingrese su correo electrónico">
+                    <br>
+                </div>
+                <div class="grid-item1"><label for="telefono">Número de teléfono</label>
+
+                    <br></div>
+                   <div class="grid-item2"> <input type="number" id="telefono" placeholder="Ingrese su número de teléfono">
+                    <br>
+                </div>
+                <div class="grid-item1">
+                    <label for="interes">Sobre cual de estos temas quiere recibir informacion:</label></div>
+                    <div class="grid-item2"><select id="interes" name="interes">
+                        <option value="int1">Alimentacion Saludable</option>
+                        <option value="int2">Actividad fisica</option>
+                        <option value="int3">Ciudado del ambiente</option>
+                    </select>
+
+                    
+                </div>
+                <div class="grid-item1"><label for="mensaje">Ingrese aquí un mensaje</label>
+                    <br></div>
+                    <div class="grid-item2"><textarea name="mensaje" id="mensaje" placeholder="Mensaje"></textarea>
+                    <br>
+                </div>
+                <div class="grid-item1">
+                    <input type="checkbox" name="terminos" id="terminos">
+                    <label for="terminos">Acepto los Términos y Condiciones</label>
+
+                    <br><br>
+                </div>
+                <div class="grid-item1">
+                    <input type="submit" value="Enviar">
+                </div>
+
+            </form>
+        </div>
+    </section>
+    <!--Footer-->
     <div class="footer">
         <h2>Footer</h2>
     </div>
-      <!--Libreria de animacion para JS-->>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js" integrity="sha512-tHvUcUQYi35zApvAa5TNR3fNhBQkVtkmWKfacnpxmix4/VTGz1lGjIVyLMp7gLgAvg+aKJjnVKokXJNS5GZ+/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-      <!--Nuestro JS-->
-      <script src="/script.js"></script>
+    <!--Libreria de animacion para JS-->>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+        integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"
+        integrity="sha512-tHvUcUQYi35zApvAa5TNR3fNhBQkVtkmWKfacnpxmix4/VTGz1lGjIVyLMp7gLgAvg+aKJjnVKokXJNS5GZ+/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--Nuestro JS-->
+    <script src="/script.js"></script>
 </body>
 
 </html>
