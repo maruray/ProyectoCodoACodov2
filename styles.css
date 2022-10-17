@@ -31,6 +31,7 @@ h2 {
 h3 {
   font-size: 1.25rem;
   line-height: 125%;
+  margin-bottom: 10px;
 }
 
 nav {
@@ -228,7 +229,8 @@ nav svg {
   border-radius: 10px;
 }
 
-/formulario .container {
+
+.container {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
@@ -247,7 +249,7 @@ input[type=text],
 input[type=number],
 input[type=email],
 textarea,
-select{
+select {
   width: 90%;
   padding: 12px 20px;
   margin-left: 2%;
@@ -298,6 +300,7 @@ label,select,option{
   font-family: 'Courgette', cursive;
 }
 
+
 .grid-container {
   display: grid;
 grid-template-columns: 2fr 3fr;
@@ -308,6 +311,7 @@ grid-template-columns: 2fr 3fr;
   grid-column-end: 2;
   /*font-family: 'Montserrat', sans-serif;*/
   font-family: 'Courgette', cursive;
+  margin-left: 10px;
 }
 .grid-item2{
   grid-column-start: 2;
@@ -326,3 +330,4 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+
