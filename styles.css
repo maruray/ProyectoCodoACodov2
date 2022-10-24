@@ -208,6 +208,31 @@ nav svg {
   }
 }
 
+@media screen and (min-width: 1000px) {
+  body {
+    padding: 0% 10%;
+  }
+
+  .videos {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .about {
+    display: flex;
+    gap: 5rem;
+    justify-content: space-between;
+  }
+
+  .about img {
+    width: 25%;
+  }
+
+  .about h2 {
+    text-align: start;
+  }
+}
+
 .image-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -337,7 +362,7 @@ input[type=number] {
 
 .footerLinks {
   text-decoration: none;
-  background-color: #3A6A59;
+  background-color: #353521;
   height: 50px;
   display: flex;
   align-items: center;
@@ -360,3 +385,28 @@ input[type=number] {
   padding-left: 20px;
   padding-right: 20px;
 }
+
+/* unvisited link */
+footer a:link {
+  color: beige
+}
+
+/* visited link */
+footer a:visited {
+  color: beige;
+}
+
+/* mouse over link */
+footer a:hover {
+  color: yellow;
+}
+
+/* selected link */
+footer a:active {
+  color: blue;
+}
+footer span{
+  padding: 3mm;
+}
+
+

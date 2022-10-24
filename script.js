@@ -38,7 +38,7 @@ videos.forEach((video) => {
 var formulario = document.getElementsByName('forms')[0];  
 
 // --------------------------------------------------------
-// Validar Nombre
+// Validamos Nombre
 // --------------------------------------------------------
 var validarNombre = function (e) {
     if (formulario.nombre.value == 0) {     
@@ -57,18 +57,6 @@ var validarApellido = function (e) {
     }
 };
 
-// --------------------------------------------------------
-// Validar Interes
-// --------------------------------------------------------
-var validarRadio = function (e) {
-    if (formulario.so[0].checked == true ||
-        formulario.so[1].checked == true ||
-        formulario.so[2].checked == true) {
-    } else {  
-        alert("Selecciona un interés");
-        e.preventDefault();
-    }
-};
 
 // --------------------------------------------------------
 // Validamos Terminos y Condiciones
@@ -85,11 +73,11 @@ var validarCheckbox = function (e) {
 // --------------------------------------------------------
 var validar = function (e) {  
     validarNombre(e);
-    validarRadio(e);
+    validarApellido(e);
     validarCheckbox(e);
 };
 
 // --------------------------------------------------------
-// Espera que se presione "enviar" y llama a "validar"
-// submit es un evento DEL FORM, no del botón!
+// 
+// 
 formulario.addEventListener("submit", validar);

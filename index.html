@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,13 +14,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comforter&display=swap" rel="stylesheet">
     -->
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
 
     <title>Life & Health</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+<!--Animaciones -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
@@ -31,48 +38,25 @@
                 <img src="/img/" alt="">
                 <!--<h1>Imagen Saludable</h1>.-->
             </div>
-    <!--Menu desplegable-->
+            <!--Menu desplegable-->
             <div class="links">
                 <a href="#alim">Alimentacion</a>
                 <a href="#dep">Deporte</a>
                 <a href="#rec">Reciclar</a>
-                <a href="contacto.html#contacto">Contacto</a>
+                <a href="#about">Acerca de nosotros</a>
+                <a href="#Contacto">Contacto</a>
             </div>
-            <svg
-                width="44"
-                height="18"
-                viewBox="0 0 44 18"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-            >
-            <line
-                class="line"
-                y1="1"
-                x2="44"
-                y2="1"
-                stroke="white"
-                stroke-width="2"
-                />
-            <line 
-                class="line"
-                y1="17"
-                x2="11"
-                y2="17"
-                stroke="white"
-                stroke-width="2"
-            />
+            <svg width="44" height="18" viewBox="0 0 44 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line class="line" y1="1" x2="44" y2="1" stroke="white" stroke-width="2" />
+                <line class="line" y1="17" x2="11" y2="17" stroke="white" stroke-width="2" />
             </svg>
         </nav>
         <div class="selling-point">
-            <h2>Que tu mente respire</h2>
+            <h2 class="animate__animated animate__pulse animate__infinite animate__slower">Que tu mente respire</h2>
             <h3></h3>
-            <div class="ctas">
-                <button class="cta-sec">Explorador</button>
-                <button class="cta-main">Mas informacion</button>
-            </div>
         </div>
     </section>
-    
+
     <!-- Sector videos -->
     <section class="classes">
         <div class="classes-description">
@@ -96,29 +80,29 @@
     </section>
 
     <!-- Sector imagenes alimentos -->
-        <section id="alim" class="classes2">
-            <div class="classes-description2">
-                <h2>Alimentacion</h2>
-                <h3>Todo suma!</h3>
-            </div>
+    <section id="alim" class="classes2">
+        <div class="classes-description2">
+            <h2>Alimentacion</h2>
+            <h3>Todo suma!</h3>
+        </div>
 
-            <div class="contenedor">
-                <ul class="image-gallery" style="list-style: none;">
-                    <li>
-                        <img class="img1" src="/img/Alimentos/anh-nguyen-kcA-c3f_3FE-unsplash.jpeg" alt="">
-                    </li>
-                    <li>
-                        <img class="img1" src="/img/Alimentos/chad-montano-eeqbbemH9-c-unsplash.jpeg" alt="">
-                    </li>
-                    <li>
-                        <img class="img1" src="/img/Alimentos/eiliv-aceron-ZuIDLSz3XLg-unsplash.jpeg" alt="">
-                    </li>
-                    <li>
-                        <img class="img1" src="/img/Alimentos/victoria-shes-UC0HZdUitWY-unsplash.jpeg" alt="">
-                    </li>
-                </ul>
-            </div>
-        </section>
+        <div class="contenedor">
+            <ul class="image-gallery" style="list-style: none;">
+                <li>
+                    <img class="img1" src="/img/Alimentos/anh-nguyen-kcA-c3f_3FE-unsplash.jpeg" alt="">
+                </li>
+                <li>
+                    <img class="img1" src="/img/Alimentos/chad-montano-eeqbbemH9-c-unsplash.jpeg" alt="">
+                </li>
+                <li>
+                    <img class="img1" src="/img/Alimentos/eiliv-aceron-ZuIDLSz3XLg-unsplash.jpeg" alt="">
+                </li>
+                <li>
+                    <img class="img1" src="/img/Alimentos/victoria-shes-UC0HZdUitWY-unsplash.jpeg" alt="">
+                </li>
+            </ul>
+        </div>
+    </section>
 
     <!--Sector imagenes deporte-->
 
@@ -146,65 +130,134 @@
         </div>
     </section>
 
-        <!--Sector imagenes salud-->
+    <!--Sector imagenes salud-->
 
-        <section id="rec" class="classes2">
-            <div class="classes-description2">
-                <h2>Reciclar</h2>
-                <h3>Cuidamos lo que amamos</h3>
-            </div>
-    
-            <div class="contenedor">
-                <ul class="image-gallery" style="list-style: none;">
-                    <li>
-                        <img class="img1" src="/img/Medio/marcell-viragh-3ah83oHlmKc-unsplash.jpeg" alt="">
-                    </li>
-                    <li>
-                        <img class="img1" src="/img/Medio/max-gotts-jI7wCZ5Z_6Y-unsplash.jpeg" alt="">
-                    </li>
-                    <li>
-                        <img class="img1" src="/img/Medio/towfiqu-barbhuiya-XnlCuVD04FQ-unsplash.jpeg" alt="">
-                    </li>
-                    <li>
-                        <img class="img1" src="img/Medio/foot.jpeg" alt="">
-                    </li>
-                </ul>
-            </div>
-        </section>
+    <section id="rec" class="classes2">
+        <div class="classes-description2">
+            <h2>Reciclar</h2>
+            <h3>Cuidamos lo que amamos</h3>
+        </div>
 
-   
-    <section class="about">
+        <div class="contenedor">
+            <ul class="image-gallery" style="list-style: none;">
+                <li>
+                    <img class="img1" src="/img/Medio/marcell-viragh-3ah83oHlmKc-unsplash.jpeg" alt="">
+                </li>
+                <li>
+                    <img class="img1" src="/img/Medio/max-gotts-jI7wCZ5Z_6Y-unsplash.jpeg" alt="">
+                </li>
+                <li>
+                    <img class="img1" src="/img/Medio/towfiqu-barbhuiya-XnlCuVD04FQ-unsplash.jpeg" alt="">
+                </li>
+                <li>
+                    <img class="img1" src="img/Medio/foot.jpeg" alt="">
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section class="about" id="about">
         <div class="our-story">
             <h2>Nuestra Historia</h2>
             <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                It has survived not only five centuries, but also the leap into electronic typesetting, 
-                remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset 
-                sheets containing Lorem Ipsum passages, and more recently with desktop publishing software 
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                It has survived not only five centuries, but also the leap into electronic typesetting,
+                remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+                sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
                 like Aldus PageMaker including versions of Lorem Ipsum.
             </p>
         </div>
         <img src="/img/Medio/riego.jpeg" alt="">
-        
-         <!-- Footer -->
-       
+
+        <!-- Footer -->
+
     </section>
-     <footer>
-    <div class="footerLinks">
-        <ul style="list-style: none;">
-            <li><a href="index.html"color: beige;"> IR A INICIO </a></li>
-              <li><a href="https://github.com/maruray/ProyectoCodoACodov2" style="color: beige;"> SOBRE NOSOTROS </a></li>
-              <li><a href="#" style="color: beige;">SITE MAP</a></li>
-              <li><a href="contacto.html" style= "color: beige; border-right: 1px solid antiquewhite; padding-right: 10px;"> CONTACTO </a></li>
-        </ul>
-    </div>
-</footer>
+    <section id="Contacto">
+        <h3>Estemos en contacto</h3>
+        <div id="campos">
+            <form action="" name="forms" class="grid-container">
+                <div class="grid-item1"><label for="nombre">Nombre</label></div>
+                <div class="grid-item2"><input type="text" id="nombre" placeholder="Ingrese su nombre" required>
+
+                </div>
+                <div class="grid-item1"><label for="apellido">Apellido</label>
+                    <br>
+                </DIV>
+                <DIV class="grid-item2"> <input type="text" id="apellido" placeholder="Ingrese su apellido" required>
+                    <br>
+                </div>
+                <div class="grid-item1"><label for="email">Correo electrónico</label>
+                </div>
+                  <div class="grid-item2">  <input type="email" id="email" placeholder="Ingrese su correo electrónico">
+                    <br>
+                </div>
+                <div class="grid-item1"><label for="telefono">Número de teléfono</label>
+
+                    <br></div>
+                   <div class="grid-item2"> <input type="number" id="telefono" placeholder="Ingrese su número de teléfono">
+                    <br>
+                </div>
+                <div class="grid-item1">
+                    <label for="interes">Sobre cual de estos temas quiere recibir informacion:</label></div>
+                    <div class="grid-item2"><select id="interes" name="interes">
+                        <option value="int1">Alimentacion Saludable</option>
+                        <option value="int2">Actividad fisica</option>
+                        <option value="int3">Ciudado del ambiente</option>
+                    </select>
+
+                    
+                </div>
+                <div class="grid-item1"><label for="mensaje">Ingrese aquí un mensaje</label>
+                    <br></div>
+                    <div class="grid-item2"><textarea name="mensaje" id="mensaje" placeholder="Mensaje"></textarea>
+                    <br>
+                </div>
+                <div class="grid-item1">
+                    <input type="checkbox" name="terminos" id="terminos">
+                    <label for="terminos">Acepto los Términos y Condiciones</label>
+
+                    <br><br>
+                </div>
+                <div class="grid-item1">
+                    <input type="submit" value="Enviar">
+                </div>
+
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="footerLinks">
+            <ul style="list-style: none;">
+                <li><a href="index.html" color: beige;"><span class="material-symbols-outlined">
+                    home</span> IR AL INICIO
+                     </a></li>
+                <li><a href="https://github.com/maruray/ProyectoCodoACodov2" style="color: beige;"> <span class="material-symbols-outlined">
+                    emoji_people
+                    </span>SOBRE NOSOTROS </a>
+                </li>
+                <li><a href="#" style="color: beige;"><span class="material-symbols-outlined">
+                    map
+                    </span>SITE MAP</a></li>
+                <li><a href="contacto.html"
+                        style="color: beige; border-right: 1px solid antiquewhite; padding-right: 10px;"> <span class="material-symbols-outlined">
+                            contacts
+                            </span>CONTACTO</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
     <!--Libreria de animacion para JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js" integrity="sha512-tHvUcUQYi35zApvAa5TNR3fNhBQkVtkmWKfacnpxmix4/VTGz1lGjIVyLMp7gLgAvg+aKJjnVKokXJNS5GZ+/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+        integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"
+        integrity="sha512-tHvUcUQYi35zApvAa5TNR3fNhBQkVtkmWKfacnpxmix4/VTGz1lGjIVyLMp7gLgAvg+aKJjnVKokXJNS5GZ+/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!--Nuestro JS-->
     <script src="script.js"></script>
 </body>
+
 </html>
