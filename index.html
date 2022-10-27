@@ -33,23 +33,25 @@
     <!--Cabecera con logo y buscador-->
     <section class="front-page">
         <img class="hero" src="/img/andrew-neel-jtsW--Z6bFw-unsplash.jpeg" alt="">
-        <nav>
+              <nav>
             <div class="logo">
                 <img src="/img/" alt="">
                 <!--<h1>Imagen Saludable</h1>.-->
             </div>
             <!--Menu desplegable-->
-            <div class="links">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><span
+                        class="material-symbols-outlined">
+                        close</span></a>
                 <a href="#alim">Alimentacion</a>
                 <a href="#dep">Deporte</a>
                 <a href="#rec">Reciclar</a>
                 <a href="#about">Acerca de nosotros</a>
                 <a href="#Contacto">Contacto</a>
             </div>
-            <svg width="44" height="18" viewBox="0 0 44 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <line class="line" y1="1" x2="44" y2="1" stroke="white" stroke-width="2" />
-                <line class="line" y1="17" x2="11" y2="17" stroke="white" stroke-width="2" />
-            </svg>
+            <span onclick="openNav()"><span class="material-symbols-outlined">
+                    menu</span></span>
+
         </nav>
         <div class="selling-point">
             <h2 class="animate__animated animate__pulse animate__infinite animate__slower">Que tu mente respire</h2>
