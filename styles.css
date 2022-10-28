@@ -294,7 +294,7 @@ font-family: 'Montserrat', sans-serif
 }
 
 input[type=submit] {
-  width: 50%;
+  width: fit-content;
   background-color: #3A6A59;
   color: white;
   padding: 14px 20px;
