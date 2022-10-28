@@ -368,7 +368,7 @@ input[type=number] {
     align-items: center;
     justify-content: space-evenly;
     position: relative;
-    padding: 10px;    
+    padding: 5px;    
   }
 
 .footerLinks ul {
@@ -381,7 +381,6 @@ input[type=number] {
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
   display: inline-block;
-  border-left: 1px solid antiquewhite;
   padding-left: 20px;
   padding-right: 20px;
 }
