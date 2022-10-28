@@ -448,4 +448,11 @@ footer span{
   padding: 20px;
 }
 
+img.foto{
+  border-radius: 50%;
+}
+.testimonio p {
+  line-height: 150%;
+  font-size: 1.2rem;
+}
 
