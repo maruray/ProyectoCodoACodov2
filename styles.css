@@ -210,6 +210,9 @@ nav svg {
     .footerLinks ul li {
     width: 100%;
   }
+  input[type=submit] {
+    width: fit-content;
+  }
 }
 
 @media screen and (min-width: 900px) {
