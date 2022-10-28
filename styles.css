@@ -207,6 +207,9 @@ nav svg {
   .about h2 {
     text-align: start;
   }
+    .footerLinks ul li {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 900px) {
@@ -358,8 +361,9 @@ input[type=number] {
 
 .footerLinks {
     text-decoration: none;
-    background-color: #335d4e;
+    background-color: #213e34;
     max-height: fit-content;
+    min-height: 40px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -374,7 +378,7 @@ input[type=number] {
 }
 
 .footerLinks ul li {
-  font-size: 18px;
+  font-size: 16px;
   font-family: 'Montserrat', sans-serif;
   display: inline-block;
   border-left: 1px solid antiquewhite;
