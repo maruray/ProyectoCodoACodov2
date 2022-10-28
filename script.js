@@ -1,37 +1,11 @@
-const burger = document.querySelector('nav svg');
-
-burger.addEventListener("click", () => {
-    if (burger.classList.contains("active")) {
-        gsap.to(".links", { x: "100%" });
-        gsap.to(".line", { stroke: "white" });
-        gsap.set("body", { overflow: "auto" });
-        gsap.set("body", { overflowX: "hidden" });
-    } else {
-        gsap.to(".links", { x: "0%" });
-        gsap.to(".line", { stroke: "black" });
-        gsap.fromTo('.links a', {opacity: 0, y: 0}, {opacity: 1, y:20, delay: 0.5, stagger: 0.25});
-        gsap.set("body", { overflow: "hidden" });
-    }
-    burger.classList.toggle("active");
-});
-//new burguer full width
-
-//function openNav() {
- //   document.getElementById("mySidenav").style.width = "100%";
- // }
-  
-  /* Close/hide the sidenav */
- // function closeNav() {
- //   document.getElementById("mySidenav").style.width = "0";
- // }
 
 //new burguer overlay
-/* Set the width of the side navigation to 250px */
+
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
   }
   
-  /* Set the width of the side navigation to 0 */
+  
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
   }
@@ -105,9 +79,8 @@ formulario.addEventListener("submit", validar);
 
 function traerDatosAPI() {
     fetch('https://randomuser.me/api') // API a leer
-        // Cuando ha finalizado la lectura
-        // guardo en datos el texto leido:
-        .then(datos => datos.json()) //res va a guardar el dato mediante el método .json()
+        
+        .then(datos => datos.json()) // guardar el dato mediante el método .json()
         .then(datos => {
             // Y luego copio ese texto en #contenido.
             contenido.innerHTML +=
@@ -120,4 +93,25 @@ function traerDatosAPI() {
                  </div>`
         })
         
+}
+
+
+// bton de ir al inicio
+let mybutton = document.getElementById("myBtn");
+
+// 
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// 
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
