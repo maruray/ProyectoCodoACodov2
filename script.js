@@ -1,8 +1,37 @@
+const burger = document.querySelector('nav svg');
+
+burger.addEventListener("click", () => {
+    if (burger.classList.contains("active")) {
+        gsap.to(".links", { x: "100%" });
+        gsap.to(".line", { stroke: "white" });
+        gsap.set("body", { overflow: "auto" });
+        gsap.set("body", { overflowX: "hidden" });
+    } else {
+        gsap.to(".links", { x: "0%" });
+        gsap.to(".line", { stroke: "black" });
+        gsap.fromTo('.links a', {opacity: 0, y: 0}, {opacity: 1, y:20, delay: 0.5, stagger: 0.25});
+        gsap.set("body", { overflow: "hidden" });
+    }
+    burger.classList.toggle("active");
+});
+//new burguer full width
+
+//function openNav() {
+ //   document.getElementById("mySidenav").style.width = "100%";
+ // }
+  
+  /* Close/hide the sidenav */
+ // function closeNav() {
+ //   document.getElementById("mySidenav").style.width = "0";
+ // }
+
+//new burguer overlay
+/* Set the width of the side navigation to 250px */
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
   }
   
- 
+  /* Set the width of the side navigation to 0 */
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
   }
@@ -72,3 +101,23 @@ var validar = function (e) {
 // 
 // 
 formulario.addEventListener("submit", validar);
+
+
+function traerDatosAPI() {
+    fetch('https://randomuser.me/api') // API a leer
+        // Cuando ha finalizado la lectura
+        // guardo en datos el texto leido:
+        .then(datos => datos.json()) //res va a guardar el dato mediante el método .json()
+        .then(datos => {
+            // Y luego copio ese texto en #contenido.
+            contenido.innerHTML +=
+                `<div class="tarjeta">
+                 <img class="foto" src = "${datos.results[0].picture.large}"</img><br>                      
+                 <h3 class="nombre">"Lorem ipsum dolor sit amet"</h3><br>
+                 <br>
+                 <p>Consectetur adipisicing elit. Fugiat sint necessitatibus officiis quibusdam est voluptatum culpa aut facilis.</p><br>
+                 <h4 class="nombre">${datos.results[0].name.last}, ${datos.results[0].name.first}</h4><br>
+                 </div>`
+        })
+        
+}

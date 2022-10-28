@@ -21,19 +21,17 @@
 
     <title>Life & Health</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-<!--Animaciones -->
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!--Animaciones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
-<body>
+<body onload="traerDatosAPI()">
     <!--Cabecera con logo y buscador-->
     <section class="front-page">
-        <img class="hero" src="/img/andrew-neel-jtsW--Z6bFw-unsplash.jpeg" alt="">
-              <nav>
+        <img class="hero" src="/img/andrew-neel-jtsW--Z6bFw-unsplash.jpeg" alt="fondo encabezado">
+        <nav>
             <div class="logo">
                 <img src="/img/" alt="">
                 <!--<h1>Imagen Saludable</h1>.-->
@@ -47,10 +45,12 @@
                 <a href="#dep">Deporte</a>
                 <a href="#rec">Reciclar</a>
                 <a href="#about">Acerca de nosotros</a>
+                <a href="#testimonio">Experiencia de usuarios</a>
                 <a href="#Contacto">Contacto</a>
             </div>
-            <span onclick="openNav()"><span class="material-symbols-outlined">
+            <span class="openbtn" onclick="openNav()"><span class="material-symbols-outlined">
                     menu</span></span>
+
 
         </nav>
         <div class="selling-point">
@@ -177,6 +177,13 @@
         <!-- Footer -->
 
     </section>
+    <section class="testimonio" id="testimonio">
+        <DIV>
+            <h2>Experiencias de los usuarios</h2>
+        <div id="contenido">
+            <!-- contenido de la API -->
+        </div></DIV>
+    </section>
     <section id="Contacto">
         <h3>Estemos en contacto</h3>
         <div id="campos">
@@ -193,28 +200,31 @@
                 </div>
                 <div class="grid-item1"><label for="email">Correo electrónico</label>
                 </div>
-                  <div class="grid-item2">  <input type="email" id="email" placeholder="Ingrese su correo electrónico">
+                <div class="grid-item2"> <input type="email" id="email" placeholder="Ingrese su correo electrónico">
                     <br>
                 </div>
                 <div class="grid-item1"><label for="telefono">Número de teléfono</label>
 
-                    <br></div>
-                   <div class="grid-item2"> <input type="number" id="telefono" placeholder="Ingrese su número de teléfono">
+                    <br>
+                </div>
+                <div class="grid-item2"> <input type="number" id="telefono" placeholder="Ingrese su número de teléfono">
                     <br>
                 </div>
                 <div class="grid-item1">
-                    <label for="interes">Sobre cual de estos temas quiere recibir informacion:</label></div>
-                    <div class="grid-item2"><select id="interes" name="interes">
+                    <label for="interes">Sobre cual de estos temas quiere recibir informacion:</label>
+                </div>
+                <div class="grid-item2"><select id="interes" name="interes">
                         <option value="int1">Alimentacion Saludable</option>
                         <option value="int2">Actividad fisica</option>
                         <option value="int3">Ciudado del ambiente</option>
                     </select>
 
-                    
+
                 </div>
                 <div class="grid-item1"><label for="mensaje">Ingrese aquí un mensaje</label>
-                    <br></div>
-                    <div class="grid-item2"><textarea name="mensaje" id="mensaje" placeholder="Mensaje"></textarea>
+                    <br>
+                </div>
+                <div class="grid-item2"><textarea name="mensaje" id="mensaje" placeholder="Mensaje"></textarea>
                     <br>
                 </div>
                 <div class="grid-item1">
@@ -234,19 +244,21 @@
         <div class="footerLinks">
             <ul style="list-style: none;">
                 <li><a href="index.html" color: beige;"><span class="material-symbols-outlined">
-                    home</span> IR AL INICIO
-                     </a></li>
-                <li><a href="https://github.com/maruray/ProyectoCodoACodov2" style="color: beige;"> <span class="material-symbols-outlined">
-                    emoji_people
-                    </span>SOBRE NOSOTROS </a>
+                            home</span> IR AL INICIO
+                    </a></li>
+                <li><a href="https://github.com/maruray/ProyectoCodoACodov2" style="color: beige;"> <span
+                            class="material-symbols-outlined">
+                            emoji_people
+                        </span>SOBRE NOSOTROS </a>
                 </li>
                 <li><a href="#" style="color: beige;"><span class="material-symbols-outlined">
-                    map
-                    </span>SITE MAP</a></li>
+                            map
+                        </span>SITE MAP</a></li>
                 <li><a href="contacto.html"
-                        style="color: beige; border-right: 1px solid antiquewhite; padding-right: 10px;"> <span class="material-symbols-outlined">
+                        style="color: beige; border-right: 1px solid antiquewhite; padding-right: 10px;"> <span
+                            class="material-symbols-outlined">
                             contacts
-                            </span>CONTACTO</a>
+                        </span>CONTACTO</a>
                 </li>
             </ul>
         </div>
