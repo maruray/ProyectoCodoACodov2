@@ -33,6 +33,7 @@ h3 {
   margin-bottom: 10px;
 }
 
+
 nav {
   display: flex;
   align-items: center;
@@ -456,3 +457,6 @@ img.foto{
   font-size: 1.2rem;
 }
 
+span.openbtn{
+  cursor:pointer;
+}
